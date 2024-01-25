@@ -4,22 +4,6 @@
   <listeners>
     <listener class-name="extendReports1.ExtendTestNGIReport"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="ChromeBrowser(failed)">
-    <parameter name="browserName" value="Chrome"/>
-    <classes>
-      <class name="pac.Test1.VerifyTheEquarzApplication">
-        <methods>
-          <include name="clearObject"/>
-          <include name="LaunchBrowser"/>
-          <include name="VerifyTheAllSellerHeader"/>
-          <include name="logoutFromApplication"/>
-          <include name="closedBrowser"/>
-          <include name="logintoApplication"/>
-          <include name="createPomObjects"/>
-        </methods>
-      </class> <!-- pac.Test1.VerifyTheEquarzApplication -->
-    </classes>
-  </test> <!-- ChromeBrowser(failed) -->
   <test thread-count="2" parallel="tests" name="FirefoxBrowser(failed)">
     <parameter name="browserName" value="Firefox"/>
     <classes>
@@ -36,4 +20,20 @@
       </class> <!-- pac.Test1.VerifyTheEquarzApplication -->
     </classes>
   </test> <!-- FirefoxBrowser(failed) -->
+  <test thread-count="2" parallel="tests" name="ChromeBrowser(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="pac.Test1.VerifyTheEquarzApplication">
+        <methods>
+          <include name="clearObject"/>
+          <include name="LaunchBrowser"/>
+          <include name="VerifyTheAllSellerHeader"/>
+          <include name="logoutFromApplication"/>
+          <include name="closedBrowser"/>
+          <include name="logintoApplication"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- pac.Test1.VerifyTheEquarzApplication -->
+    </classes>
+  </test> <!-- ChromeBrowser(failed) -->
 </suite> <!-- Failed suite [Suite] -->
